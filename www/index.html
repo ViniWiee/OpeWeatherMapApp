@@ -1,0 +1,88 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title> Weather </title>
+    <meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Arquivo.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Digite o nome da cidade</h4>
+	  <div> <input id = 'Cityval'> </div>
+    </div>
+    <div class="modal-footer">
+      <a id = "Closebutt"href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"> Procurar </a>
+    </div>
+	</div>
+	<div id="modal2" class="modal">
+    <div id = "Favs"class="modal-content">
+      <h4>Favorite Cities</h4>
+	  <div id = 'Cb'></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"> Close </a>
+    </div>
+	</div>
+	<div id="modal1" class="modal">
+    <div id = "Noice"class="modal-content">
+      <h4>Forecast</h4>
+	  <div id = 'OI'></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"> Close </a>
+    </div>
+	</div>
+	<script src="materialize/js/materialize.js"> </script>
+	<nav>
+		<div class="nav-wrapper">
+		<a href="#" class="brand-logo center">OpenWeather</a>
+		</div>
+	</nav> 
+	<div class="container">
+	<div class="row">
+		<div class="grid-example col s12"><h4 id = "City" class="flow-text"></h4></div>
+	</div>
+		<div class="section">
+		<h5 id = "h5inline">Atual</h5>
+		<div class="icon"></div>
+		<p id = "Atual"></p>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<h5>Temperatura Mínima e Máxima</h5>
+		<p id = "Tmm"></p>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<h5>Humidade</h5>
+		<p id = "hum"></p>
+	</div>
+	<div class="divider"> </div>
+	<div class="section">
+		<h5> Condição do Tempo </h5>
+		<p id = "CDT"></p>
+	</div>
+	<div class="fixed-action-btn">
+    <a class="btn-floating btn-large black">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+		<li><a id = "forecastbtt" href="#modal1" class="modal-trigger btn-floating btn-large waves-effect waves-light black"><i class="material-icons">view_list</i></a></li>
+		<li><a id = "buttonadd" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a></li>
+		<li><a id = "modal2butt" href="#modal2" class="modal-trigger btn-floating btn-large waves-effect waves-light black"><i class="material-icons">stars</i></a></li>
+		<li><a id = "removie" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">shuffle</i></a></li>
+		<li><a id = "search" href="#modal3" class="modal-trigger btn-floating btn-large waves-effect waves-light black"><i class="material-icons">search</i></a></li>
+		<li><a id = "RemoVE" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">delete</i></a></li>
+    </ul>
+	</div>
+	</div>
+	<script src="js/oi.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="js/lokijs.min.js"></script>
+</body>
+</html>

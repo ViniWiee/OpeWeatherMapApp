@@ -1,0 +1,31 @@
+nav{
+	background-color:black;
+	position:fixed;
+	z-index:9999;
+}
+#dropdown1{
+	background-color:black;
+}
+li.oi > a{
+	color:white;
+}
+.container{
+	width:100%;
+	display:block;
+	padding-top:6em;
+	text-align:center;
+	font-size:large;
+}
+.icon{
+	display:inline-block;
+}
+.Modal-Paragraph{
+	display:inline-block;
+	width:22em;
+}
+#h5inline{
+	display:inline;
+}
+.semcidades{
+	width:150px;
+}
